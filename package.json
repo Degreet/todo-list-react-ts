@@ -1,0 +1,24 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server": "npm run start --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "server:build": "npm run build --prefix server",
+    "app": "npm run start --prefix app",
+    "app:dev": "npm run dev --prefix app",
+    "app:build": "npm run build --prefix app",
+    "dev": "concurrently \"npm run server:dev\" \"npm run app:dev\"",
+    "build": "npm run server:build && npm run app:build",
+    "start": "concurrently \"npm run server\" \"npm run app\""
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "concurrently": "^6.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+}
+
+input {
+  border-radius: 3px;
+  padding: 10px 16px;
+  border: 1px solid #bfbfbf;
+}
+
+.btn {
+  border-radius: 3px;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-danger {
+  color: #fff;
+  background: darkred;
+}
+
+.btn-success {
+  color: #fff;
+  background: green;
+}
