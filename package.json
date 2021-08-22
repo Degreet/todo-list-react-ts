@@ -15,7 +15,7 @@
     "start": "concurrently \"npm run server\" \"npm run app\""
   },
   "engines": {
-    "node": ">=16.6.0"
+    "node": "14.x"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
